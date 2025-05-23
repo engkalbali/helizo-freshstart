@@ -1,5 +1,5 @@
 import { Button, Pressable, StyleSheet, Text, View } from "react-native";
-import { useAuth } from "../../../context/auth";
+import { useAuth } from "../../../context/AuthContext";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRouter } from "expo-router";
 

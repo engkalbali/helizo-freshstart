@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { TextInput } from "react-native-gesture-handler";
-import { useAuth } from "../../context/auth";
+import { useAuth } from "../../context/AuthContext";
 
 export default function Login() {
   const router = useRouter();
