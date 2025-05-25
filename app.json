@@ -5,6 +5,10 @@
       "bundler": "metro"
     },
     "name": "helizo",
-    "slug": "helizo"
-  }
+    "slug": "helizo",
+    "version": "1.0.0",
+    "android": {
+      "package": "com.helizo.app"
+    },
+  } 
 }
