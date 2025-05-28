@@ -16,14 +16,14 @@ const SplashScreen = () => {
   useEffect(() => {
   const timeout = setTimeout(() => {
     router.replace('/(auth)/login');
-  }, 2000);
+  }, 5000);
   return () => clearTimeout(timeout);
 }, []);
 
   return (
     <View style={styles.container}>
       <Image
-        source={require('../../assets/logo.png')} // جایگزین با لوگوی خودت
+        source={require('../assets/logo.png')} // جایگزین با لوگوی خودت
         style={styles.logo}
         resizeMode="contain"
       />

@@ -26,7 +26,9 @@ const SignUpScreen = () => {
       if (setUser) {
         setUser(userCredential.user);
       }
-      router.replace('/(tabs)'); // برو به تب‌ها
+      console.log('User registered successfully:', userCredential.user);
+      Alert.alert('ثبتنام موفقیت آمیز بود')
+      router.replace('/(onboarding)/select-categories'); // برو به تب‌ها
     } catch (error) {
       if (error instanceof Error) {
         Alert.alert('خطا در ثبت‌نام', error.message);
@@ -35,7 +37,6 @@ const SignUpScreen = () => {
       }
     }
   };
-  router.replace('/(onboarding)/select-categories');
   return (
     <View style={styles.container}>
       <Text style={styles.header}>به هلیزو خوش اومدی</Text>
