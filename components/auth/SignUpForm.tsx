@@ -3,7 +3,6 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'reac
 import { Link, router } from 'expo-router';
 import { AuthContext } from '../../context/AuthContext';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
-
 // نوع داده برای فرم
 interface AuthForm {
   email: string;
@@ -36,7 +35,7 @@ const SignUpScreen = () => {
       }
     }
   };
-
+  router.replace('/(onboarding)/select-categories');
   return (
     <View style={styles.container}>
       <Text style={styles.header}>به هلیزو خوش اومدی</Text>
