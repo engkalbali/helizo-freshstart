@@ -14,10 +14,10 @@ type RootStackParamList = {
 const SplashScreen = () => {
   
   useEffect(() => {
-  const timer = setTimeout(() => {
+  const timeout = setTimeout(() => {
     router.replace('/(auth)/login');
-  }, 3000);
-  return () => clearTimeout(timer);
+  }, 2000);
+  return () => clearTimeout(timeout);
 }, []);
 
   return (
