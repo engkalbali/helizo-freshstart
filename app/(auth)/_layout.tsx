@@ -1,10 +1,14 @@
-import { Stack } from 'expo-router';
+import { Tabs } from 'expo-router';
 
 export default function AuthLayout() {
   return (
-    <Stack>
-      <Stack.Screen name="login" options={{ title: 'ورود', headerShown: false }} />
-      <Stack.Screen name="signup" options={{ title: 'ثبت‌نام', headerShown: false }} />
-    </Stack>
+    <Tabs
+      screenOptions={{
+        headerShown: false,
+        tabBarActiveTintColor: '#FEBA17',
+        tabBarInactiveTintColor: '#74512D',
+        tabBarStyle: { backgroundColor: '#4E1F00' },
+      }}
+    />
   );
 }
