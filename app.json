@@ -7,8 +7,14 @@
     "name": "helizo",
     "slug": "helizo",
     "version": "1.0.0",
+    "entryPoint": "./index.ts",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
     "android": {
       "package": "com.helizo.app"
     },
-  } 
+    "plugins": [
+      "expo-router"
+    ]
+  }
 }
