@@ -42,7 +42,7 @@ const HomeScreen = () => {
     const fetchRecipes = async () => {
       const { data, error } = await supabase
         .from('recipes')
-        .select('id, title, image, prep_time')
+        .select('id, title, image_url, prep_time')
         .limit(10);
       if (error) {
         console.error('Error fetching recipes:', error);
@@ -51,7 +51,7 @@ const HomeScreen = () => {
           data.map((item: any) => ({
             id: item.id,
             title: item.title,
-            image: item.image,
+            image: item.image_url,
             prepTime: item.prep_time,
           }))
         );

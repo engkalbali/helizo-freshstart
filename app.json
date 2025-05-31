@@ -14,7 +14,8 @@
       "package": "com.helizo.app"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-font"
     ],
     "extra": {
       "router": {
