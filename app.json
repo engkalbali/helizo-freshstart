@@ -15,6 +15,22 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c010a7b1-d84a-4f06-9895-bcdf4b321389"
+      }
+    },
+    "owner": "scheen",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c010a7b1-d84a-4f06-9895-bcdf4b321389"
+    },
+    "ios": {}
   }
 }
